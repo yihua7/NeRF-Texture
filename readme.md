@@ -3,7 +3,7 @@
 </h1>
 
 <div align="center">
-  <img src="./images/teaser.gif" width="80%" height="80%">
+  <img src="./images/teaser.gif" width="100%" height="100%">
 </div>
 
 *Given a set of multi-view images of the target texture with meso-structure, our model synthesizes Neural Radiance Field (NeRF) textures, which can then be applied to novel shapes, such as the skirt and hat in the figure, with rich geometric and appearance details.*
@@ -80,7 +80,7 @@ We are pleased to provide 3D-scene data, associated trained models, and synthesi
 Due to the storage constraints, we are offering only 4 scenes: 'durian', 'wall', 'star_flower', and 'putian_flower'.
 
 <div align="center">
-  <img src="./images/scenes.png" width="80%" height="80%">
+  <img src="./images/scenes.png" width="100%" height="100%">
 </div>
 
 The structure of the provided data is as follows:
@@ -117,7 +117,7 @@ To get started, follow these steps:
 (5) Texture Viewing and Applying: Click on the 'load synthesis' button to display the synthesized texture. Use the 'load_shape' button to apply the texture to 'target.obj', located in ./logs/${DATA_NAME}/field/.
 
 <div align="center">
-  <img src="./images/quick_start.png" width="80%" height="80%">
+  <img src="./images/quick_start.png" width="100%" height="100%">
 </div>
 
 # Prepare Your Data
@@ -181,7 +181,7 @@ During the execution of the script, an interactive segmentation window will appe
 By following these steps, you can interactively segment the video and save the segmentation results for further processing.
 
 <div align="center">
-  <img src="./images/mivos.png" width="80%" height="80%">
+  <img src="./images/mivos.png" width="100%" height="100%">
 </div>
 
 # Training
@@ -202,7 +202,7 @@ Please follow these instructions to navigate through the interactive window:
 **4. Closing the Window**: Finally, upon completion of all the above steps, you can close the interactive window.
 
 <div align="center">
-  <img src="./images/i-ngp.png" width="80%" height="80%">
+  <img src="./images/i-ngp.png" width="100%" height="100%">
 </div>
 
 ## Train NeRF-Texture
@@ -218,7 +218,7 @@ Details pertaining to model training and texture synthesis will be elaborated in
 The summary of texture synthesis steps is illustrated as the following image:
 
 <div align="center">
-  <img src="./images/nerf-texture.png" width="80%" height="80%">
+  <img src="./images/nerf-texture.png" width="100%" height="100%">
 </div>
 
 ## 1. Start training NeRF-Texture
@@ -244,7 +244,7 @@ Here are the steps to achieve this:
 This way, you can control where textures are sampled from on your mesh.
 
 <div align="center">
-  <img src="./images/picked_faces.png" width="80%" height="80%">
+  <img src="./images/picked_faces.png" width="100%" height="100%">
 </div>
 
 ## 4. Sample implicit patches
@@ -261,7 +261,7 @@ You will need to assign values to the 'DATA_NAME' and 'MODEL_NAME' variables in 
 The following image provides a visual illustration of the processes of patch sampling, matching, and quilting. The resulting synthesized implicit texture encapsulates both the meso-scale geometry and the view-dependent appearance, which can be subsequently decoded by a NeRF (Neural Radiance Fields) network.
 
 <div align="center">
-  <img src="./images/texture_synthesis.gif" width="80%" height="80%">
+  <img src="./images/texture_synthesis.gif" width="100%" height="100%">
 </div>
 
 
@@ -270,7 +270,7 @@ The following image provides a visual illustration of the processes of patch sam
 Click on the 'load synthesis' button to load the synthesized texture stored in the **'texture.npz'** file. Then the synthesized texture will then be dislpayed within the interactive window.
 
 <div align="center">
-  <img src="./images/synthesized_results.png" width="80%" height="80%">
+  <img src="./images/synthesized_results.png" width="100%" height="100%">
 </div>
 
 
@@ -279,7 +279,7 @@ Click on the 'load synthesis' button to load the synthesized texture stored in t
 To apply the synthesized texture to a shape, first place a 'target.obj' file into the 'field' folder. After that, click on the 'load_shape' button to apply the texture. Please remember that you must first perform the 'load synthesis' operation before proceeding to 'load shape'.
 
 <div align="center">
-  <img src="./images/application.png" width="80%" height="80%">
+  <img src="./images/application.png" width="100%" height="100%">
 </div>
 
 
