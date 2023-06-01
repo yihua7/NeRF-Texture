@@ -23,7 +23,9 @@ building on [torch-ngp](https://github.com/ashawkey/torch-ngp).
 # Environment
 ## 1. Begin by setting up a Python 3.7+ environment with [PyMesh](https://pymesh.readthedocs.io/en/latest/installation.html) and [frnn](https://github.com/lxxue/FRNN).
 
-## 2. Install [PyTorch](https://pytorch.org/), [PyTorch3D](https://pytorch3d.org/), [tiny-cuda-nn](https://github.com/NVlabs/tiny-cuda-nn), and [cubvh](https://github.com/ashawkey/cubvh) by invoking: (if failed please refer to the official webs)
+## 2. Install [PyTorch](https://pytorch.org/), [PyTorch3D](https://pytorch3d.org/), [tiny-cuda-nn](https://github.com/NVlabs/tiny-cuda-nn), and [cubvh](https://github.com/ashawkey/cubvh) by invoking: 
+
+(if failed please refer to the official webs)
 
     pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
     pip install --no-index --no-cache-dir pytorch3d -f https://dl.fbaipublicfiles.com/pytorch3d/packaging/wheels/py38_cu113_pyt1110/download.html
@@ -99,7 +101,7 @@ The structure of the provided data is as follows:
 
 To get started, follow these steps:
 
-(1) Data Placement: Place the 'data' folder in a location of your choice, ensuring that you set the 'PATH_TO_DATASET' variable in [data_args.py](./data_args.py)to the corresponding path.
+(1) Data Placement: Place the 'data' folder in a location of your choice, ensuring that you set the 'PATH_TO_DATASET' variable in [data_args.py](./data_args.py) to the corresponding path.
 
 (2) Logs Placement: Move the 'logs' folder into the 'NeRF-Texture' directory.
 
@@ -137,7 +139,7 @@ At a high level, a dataset consists of the following:
 
 We provide scripts for users to preprocess their own captured data. Please follow the steps below:
 
-## 1. Data Capture
+## 1. Data capture
 
 (1) Capture a multi-view video of the taret texture and name it as ${DATA_NAME}.
 
@@ -149,7 +151,7 @@ We provide scripts for users to preprocess their own captured data. Please follo
 ## 2. Download [MiVOS](https://github.com/hkchengrex/MiVOS)
 Download [MiVOS](https://github.com/hkchengrex/MiVOS). In the file [prepare_your_data.py](./tools/prepare_your_data.py), rename the variable 'MIVOS_PATH’ as the path to the MiVOS installation.
 
-## 3. Run Script
+## 3. Run script
 Before beginning the data preprocessing, it's crucial to assign values to the 'path_to_dataset' and 'dataset_name' variables within the prepare_your_data.py script. These variables define the directory path to your dataset and the dataset name, respectively.
 
 Once these variables are set, you can run the [prepare_your_data.py](./tools/prepare_your_data.py) script to commence data preprocessing. This process includes several steps such as frame extraction, blurred image removal, image segmentation, and camera pose estimation.
@@ -186,20 +188,20 @@ By following these steps, you can interactively segment the video and save the s
 
 # Training
 
-## Coarse Shape Estimation
+## Coarse shape estimation
 After preparing a dataset, you can train a NeRF-Texture based on it. But before that, you need to train an Instant-NGP to estimate the coarse shape by running:
 
     CUDA_VISIBLE_DEVICES=0 python main_nerf.py ${PATH_TO_DATASET} --workspace ./logs/${DATA_NAME} -O --bound 1.0 --scale 0.8 --dt_gamma 0 --ff --mode colmap --gui
 
 Please follow these instructions to navigate through the interactive window:
 
-**1. Training**: Upon opening the interactive window, locate the 'start' button to commence the training of Instant-NGP. The process should reach convergence in approximately one minute. Once it does, you can halt the training by clicking on the 'stop' button, which is located in the same area as the 'start' button.
+**1. Train**: Upon opening the interactive window, locate the 'start' button to commence the training of Instant-NGP. The process should reach convergence in approximately one minute. Once it does, you can halt the training by clicking on the 'stop' button, which is located in the same area as the 'start' button.
 
-**2. Obtaining Raw Base Mesh** : Next, click on the 'save_mesh' button. This action will generate the raw base mesh using the Marching Cubes algorithm on the density field.
+**2. Obtain Raw Base Mesh** : Next, click on the 'save_mesh' button. This action will generate the raw base mesh using the Marching Cubes algorithm on the density field.
 
-**3. Extracting Scan Point Cloud** : Proceed to click on the 'save_pcl' button. This will extract the scan point cloud, which will subsequently be utilized to determine the height threshold of the meso-structure texture.
+**3. Extract Scan Point Cloud** : Proceed to click on the 'save_pcl' button. This will extract the scan point cloud, which will subsequently be utilized to determine the height threshold of the meso-structure texture.
 
-**4. Closing the Window**: Finally, upon completion of all the above steps, you can close the interactive window.
+**4. Close the Window**: Finally, upon completion of all the above steps, you can close the interactive window.
 
 <div align="center">
   <img src="./images/i-ngp.png" width="100%" height="100%">
@@ -213,7 +215,7 @@ Modify the PATH_TO_DATASET and DATA_NAME defined in [data_args.py](./data_args.p
 
 Details pertaining to model training and texture synthesis will be elaborated in the upcoming sections of this content
 
-# Texture Synthesis
+# Texture synthesis
 
 The summary of texture synthesis steps is illustrated as the following image:
 
