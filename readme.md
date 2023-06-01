@@ -46,7 +46,9 @@ building on [torch-ngp](https://github.com/ashawkey/torch-ngp).
     pip install .
     cd ..
 
-## 5. Install [RayTracer](./external/RayTracer/) (modified from [raytracing](https://github.com/ashawkey/raytracing)) by invoking:
+## 5. Install [RayTracer](./external/RayTracer/) by invoking:
+
+(modified from [raytracing](https://github.com/ashawkey/raytracing))
 
     cd external/RayTracer
     python setup.py develop
