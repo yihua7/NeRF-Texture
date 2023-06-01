@@ -1,0 +1,34 @@
+dearpygui==1.3.1
+imageio==2.16.1
+numba==0.56.0
+numpy==1.22.4
+open3d
+open3d-python
+opencv-contrib-python==4.4.0.46
+opencv-python==4.1.2.30
+plyfile==0.7.4
+PyMCubes==0.1.2
+pyrender==0.1.45
+scikit-image==0.19.2
+scikit-learn==1.1.1
+scipy==1.7.1
+torch-ema
+tqdm==4.62.2
+trimesh==3.12.6
+tensorboardX
+rich
+xatlas
+rtree
+
+# for MiVOS
+PyQt5
+progressbar2
+networkx
+gitpython
+gdown
+Cython
+
+
+# not necessary but used in some codes
+# igl
+# torch-efficient-distloss  # the effect of dist loss becomes wierd after the lib got upgraded

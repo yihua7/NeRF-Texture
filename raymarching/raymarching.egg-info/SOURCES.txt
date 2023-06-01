@@ -1,0 +1,7 @@
+setup.py
+/home/yihua/nips2022/code/NeRF-Texture/raymarching/src/bindings.cpp
+/home/yihua/nips2022/code/NeRF-Texture/raymarching/src/raymarching.cu
+raymarching.egg-info/PKG-INFO
+raymarching.egg-info/SOURCES.txt
+raymarching.egg-info/dependency_links.txt
+raymarching.egg-info/top_level.txt
