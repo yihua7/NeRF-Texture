@@ -75,7 +75,7 @@ We are pleased to provide 3D-scene data, associated trained models, and synthesi
 
 * Share link: https://pan.baidu.com/s/1Cy2yV3islAsv9UxLYf94KA?pwd=1234
 
-* Extraction code：1234
+* Extraction code: 1234
 
 Due to the storage constraints, we are offering only 4 scenes: 'durian', 'wall', 'star_flower', and 'putian_flower'.
 
