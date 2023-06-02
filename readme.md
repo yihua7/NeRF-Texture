@@ -21,10 +21,10 @@ building on [torch-ngp](https://github.com/ashawkey/torch-ngp).
 
  
 # Environment
-## 1. Begin by setting up a Python 3.7+ environment with [PyMesh](https://pymesh.readthedocs.io/en/latest/installation.html) and [frnn](https://github.com/lxxue/FRNN).
 
-## 2. Install [PyTorch](https://pytorch.org/), [PyTorch3D](https://pytorch3d.org/), [tiny-cuda-nn](https://github.com/NVlabs/tiny-cuda-nn), and [cubvh](https://github.com/ashawkey/cubvh) by invoking: 
+**1.Begin by setting up a Python 3.7+ environment with [PyMesh](https://pymesh.readthedocs.io/en/latest/installation.html) and [frnn](https://github.com/lxxue/FRNN).**
 
+**2.Install [PyTorch](https://pytorch.org/), [PyTorch3D](https://pytorch3d.org/), [tiny-cuda-nn](https://github.com/NVlabs/tiny-cuda-nn), and [cubvh](https://github.com/ashawkey/cubvh) by invoking:**
 (if failed please refer to the official webs)
 
     pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
@@ -32,33 +32,32 @@ building on [torch-ngp](https://github.com/ashawkey/torch-ngp).
     pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
     pip install git+https://github.com/ashawkey/cubvh
 
-## 3. Install [raymarching](./raymarching/)
+**3.Install [raymarching](./raymarching/)**
 
     cd raymarching
     python setup.py build_ext --inplace
     pip install .
     cd ..
 
-## 4. Install [gridencoder](./gridencoder/)
+**4.Install [gridencoder](./gridencoder/)**
 
     cd gridencoder
     python setup.py build_ext --inplace
     pip install .
     cd ..
 
-## 5. Install [RayTracer](./external/RayTracer/) by invoking:
-
+**5.Install [RayTracer](./external/RayTracer/) by invoking:**
 (modified from [raytracing](https://github.com/ashawkey/raytracing))
 
     cd external/RayTracer
     python setup.py develop
     cd ../..
 
-## 6. Then invoke:
+**6.Then invoke:**
 
     pip install -r requirements.txt
 
-## 7.Download and compile [CoACD](https://github.com/SarahWeiii/CoACD) and [Manifold](https://github.com/hjwdzh/Manifold):
+**7.Download and compile [CoACD](https://github.com/SarahWeiii/CoACD) and [Manifold](https://github.com/hjwdzh/Manifold):**
 
 The detailed instructions for installation refer to official websites. After compiling both CoACD and Manifold, rename the binary file 'main' of [CoACD](https://github.com/SarahWeiii/CoACD) as 'CoACD' and move it to ./tools. Also move binary files 'manifold' and 'simplify' of [Manifold](https://github.com/hjwdzh/Manifold) to ./tools.
 
