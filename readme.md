@@ -10,7 +10,7 @@
 
 ***
 
-This is the code for Nerfies: Deformable Neural Radiance Fields.
+This is the code for NeRF-Texture: Texture Synthesis with Neural Radiance Fields.
 
  * [Project Page](https://yihua7.github.io/NeRF-Texture-web/)
  * [Paper (Coming soon)](https://yihua7.github.io/NeRF-Texture-web/)
