@@ -13,7 +13,7 @@
 This is the code for NeRF-Texture: Texture Synthesis with Neural Radiance Fields.
 
  * [Project Page](https://yihua7.github.io/NeRF-Texture-web/)
- * [Paper (Coming soon)](https://yihua7.github.io/NeRF-Texture-web/)
+ * [Paper](https://drive.google.com/file/d/1M8QTJPcDunY-WqSpFmWZ1xt9j3K6yKSg/view?usp=sharing)
  * [Video](https://youtu.be/d4QpDQzN2mU)
  
 This codebase is implemented using [tiny-cuda-nn](https://github.com/NVlabs/tiny-cuda-nn), 
