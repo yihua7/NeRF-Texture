@@ -299,27 +299,22 @@ class patchBasedTextureSynthesis:
     def prepareExamplePatches(self):
         print('Preparing example patches ...')
         result = self.patches
-        stbn = self.sample_tbn
+        stbn = self.sample_tbn.reshape([-1, 3, 3])
 
         self.total_patches_count = result.shape[0]
         if self.mirror_hor:
             hor_result = result[:, ::-1, :, :]
             result = np.concatenate((result, hor_result))
             hor_stbn = np.copy(stbn)
-            hor_stbn[..., 0, :] *= -1
+            hor_stbn[..., 0] *= -1
             stbn = np.concatenate([stbn, hor_stbn], axis=0)
         if self.mirror_vert:
             vert_result = result[:, :, ::-1, :]
             result = np.concatenate((result, vert_result))
             hor_vtbn = np.copy(stbn)
-            hor_vtbn[..., 1, :] *= -1
+            hor_vtbn[..., 1] *= -1
             stbn = np.concatenate([stbn, hor_vtbn], axis=0)
-        if self.rotate:
-            rot_result1 = np.rot90(result, 2)
-            rot_result2 = np.rot90(rot_result1, 2)
-            rot_result3 = np.rot90(rot_result2, 2)
-            result = np.concatenate((result, rot_result1, rot_result2, rot_result3))
-        return result, stbn
+        return result, stbn.reshape([-1, 9])
     
     def initCanvas(self):
         
