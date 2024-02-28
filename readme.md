@@ -150,7 +150,7 @@ We provide scripts for users to preprocess their own captured data. Please follo
         ├── ${DATA_NAME}.mp4
 
 ## 2. Download [MiVOS](https://github.com/hkchengrex/MiVOS)
-Download [MiVOS](https://github.com/hkchengrex/MiVOS). In the file [prepare_your_data.py](./tools/prepare_your_data.py), rename the variable 'MIVOS_PATH’ as the path to the MiVOS installation.
+Download [MiVOS](https://github.com/hkchengrex/MiVOS). In the file [prepare_your_data.py](./tools/prepare_your_data.py), rename the variable 'MIVOS_PATH’ as the path to the MiVOS installation. Place [interactive_invoke.py](tools/interactive_invoke.py) under the MiVOS installed path.
 
 ## 3. Run script
 Before beginning the data preprocessing, it's crucial to assign values to the 'path_to_dataset' and 'dataset_name' variables within the prepare_your_data.py script. These variables define the directory path to your dataset and the dataset name, respectively.
