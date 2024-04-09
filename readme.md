@@ -342,4 +342,14 @@ If you find our work useful, please consider citing:
         keywords = {Neural Radiance Fields, Texture Synthesis, Meso-structure Texture},
         pages={1--10}
 }
+
+@article{huang2024nerf,
+  title={NeRF-Texture: Synthesizing Neural Radiance Field Textures},
+  author={Huang, Yi-Hua and Cao, Yan-Pei and Lai, Yu-Kun and Shan, Ying and Gao, Lin},
+  journal={IEEE Transactions on Pattern Analysis \& Machine Intelligence},
+  number={01},
+  pages={1--15},
+  year={2024},
+  publisher={IEEE Computer Society}
+}
 ```
