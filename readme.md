@@ -13,13 +13,25 @@
 This is the code for NeRF-Texture: Texture Synthesis with Neural Radiance Fields.
 
  * [Project Page](https://yihua7.github.io/NeRF-Texture-web/)
- * [Paper](https://drive.google.com/file/d/1M8QTJPcDunY-WqSpFmWZ1xt9j3K6yKSg/view?usp=sharing)
+ * [Paper (SIGGRAPH 2023)](https://dl.acm.org/doi/abs/10.1145/3588432.3591484)
+ * [Paper (TPAMI 2024)](https://ieeexplore.ieee.org/abstract/document/10489854)
  * [Video](https://youtu.be/d4QpDQzN2mU)
  
 This codebase is implemented using [tiny-cuda-nn](https://github.com/NVlabs/tiny-cuda-nn), 
 building on [torch-ngp](https://github.com/ashawkey/torch-ngp).
 
- 
+
+# NeRF-Texture Synthesis on **Arbitrary Manifolds**
+
+Extended work with synthesis algorithm of NeRF-Texture on arbitrary manifolds is now accepted to T-PAMI! Please refer to [texture_synthesis_on_curved_surface.py](./texture_synthesis_on_curved_surface.py) for detailed usage!
+
+<div align="center">
+  <img src="./images/nefertiti_textured.png" width="44.5%" height="100%">
+  <img src="./images/nefertiti_neural_textured.png" width="40%" height="100%">
+  
+  *NeRF-Texture synthesized on the curved surface. (**left**: rendered texture; **right**: neural visualization)*
+</div>
+
 # Environment
 
 **1.Begin by setting up a Python 3.7+ environment with [PyMesh](https://pymesh.readthedocs.io/en/latest/installation.html) and [frnn](https://github.com/lxxue/FRNN).**
